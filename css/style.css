@@ -1,0 +1,341 @@
+body {
+    background: linear-gradient(to right, hsl(231.11deg 52.94% 10%), #000000); /* Dark blue to purple gradient */
+    height: 100vh;  /* Ensure the gradient covers the whole viewport height */
+    margin: 0;      /* Remove default margin */
+}
+#body-header{
+	height:15vh;
+	color:white;
+	text-align:center;
+
+}
+#navigation-list{
+	list-style: none!important;
+	padding-left:0;
+	text-align:center;
+	margin:0;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	width:100%;
+}
+#navigation-list li{
+	display:inline-block;
+	padding-left:8rem;
+	margin-top:2rem;
+	margin-right:4rem;
+	line-height:2rem;
+	font-size:1.3rem;
+	opacity:0.6;
+	font-family:monospace;
+
+
+}#navigation-list li:nth-child(1) {
+    margin-left: -6.5rem;
+    opacity:1;
+
+}
+#navigation-list li:nth-child(2) {
+    margin-left: -10rem;
+    
+}
+
+#navigation-list li:nth-child(3)
+{
+	margin-left:35rem;
+}
+#navigation-list li:nth-child(4){
+	margin-left: auto;
+	margin-right:-5rem;
+}
+
+#navigation-list li:last-child {
+    margin-right: 1rem;
+    opacity:1;
+}
+.search-wrapper{
+	display:flex;
+	align-items:center;
+}
+.search-wrapper form{
+	display:flex;
+
+}
+.search-wrapper input{
+	padding:0.5rem;
+	border-radius:10px;
+	background:none;
+	border:1px solid grey;
+
+	
+}
+input[type="search"]{
+	color:white;
+}
+.search-wrapper button{
+	background:none;
+	border:none;
+	cursor:pointer;
+	color:white;
+}
+.bell{
+	background:none;
+	border:none;
+	cursor:pointer;
+	color:white;
+	opacity:0.5;
+}
+
+.logo-item{
+	display:flex;
+	margin:0;
+	padding:0;
+}
+.logo-img{
+	height:5rem;
+	width:5rem;
+	border-radius:80%;
+	object-fit:cover;
+	margin-top: 0.2rem;
+	object-position: center;
+	object-fit:cover;
+
+}
+.logo-item::after{
+	content:"Exmusix";
+	font-family:monospace; 
+	font-weight:bold;
+	font-size:1.5rem;
+	display:inline-block;
+	vertical-align:middle;
+
+}
+/*header done here*/
+
+/*carousel using bootstrap*/
+.caro {
+    display: flex;            /* Enable Flexbox */
+    justify-content: center;  /* Center the carousel horizontally */
+    align-items: center;      /* Center the carousel vertically */
+    width: 100%;              /* Ensure the container stretches full width */
+    height: 36rem;           /* Define the height of the container */
+    overflow: hidden;        /* Hide overflowed content */
+    margin-top:-1rem;
+    flex-direction: row-reverse;
+    margin-bottom: -8rem;
+    margin-left: -3rem;
+}
+
+.vstack {
+    align-items: flex-start; /* Aligns stack content to the left */
+    text-align: left;
+    color: white;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin-top: -25rem;
+    
+}
+.p-2{
+	margin-bottom: -1rem;
+	cursor: pointer;
+	width:5rem;
+	position: static;
+	
+	
+}
+
+.p3{
+	margin-bottom: 8rem;
+}
+.list-group {
+	display: flex;
+	align-items: flex-end;
+	text-align: left;
+	width:33vw;
+	margin-left:62rem;
+	margin-top: -22.8rem;
+	margin-bottom:2rem;
+	border-style: none;
+	background: #020206;
+	
+}
+.list-group-item{
+	height: 5rem;
+	border: none;
+	background: #020206;
+}
+.list-group a{
+	background:#020206;
+}
+.below{
+	margin-bottom: -10rem;
+}
+#carouselExampleIndicators {
+	position:relative;
+	overflow:visible;
+    max-width: 70%;          /* Ensure it fits the width of the container */
+    width:45%;
+    height: 20rem;            /* Set a fixed height for the carousel */
+    margin-right:15em;
+}
+.carousel-inner{
+	display:flex;
+	overflow:hidden;
+}
+.carousel-item{
+	
+	transition:transform 0.5s ease-in-out;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    object-fit: cover;  /* Ensures the image covers the area */
+    width: 100%;        /* Ensures all images take full width */
+    height: 20rem;      /* Set a fixed height to normalize sizes */
+    border-radius: 4rem;
+}
+
+.sidebar{
+	height:10rem;
+	width:15rem;
+	margin-left:rem;
+
+
+}
+
+.lr_section{
+	margin-top:5rem;
+}
+#latest_releases{
+	list-style: none;
+	display:flex;
+	align-items: center;
+	gap:0.8em;
+
+}
+#latest_releases li i{
+	list-style: none;
+	color:white;
+	opacity:0.5;
+}
+.latest_heading{
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color:white;
+	opacity:0.5;
+	margin-top: 0.5rem;
+}
+.latest_list ul li{
+	list-style: none;
+	margin-top: -50rem;
+
+}
+.song-list{
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+}
+.list_und {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Adjust spacing */
+    list-style: none;
+    padding: 0;
+    margin-left:2rem;
+
+}
+
+.list_und li {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    text-align: center;
+    gap: 0.2rem; /* Add spacing between image and ellipsis */
+    position: relative;
+}
+
+.list_und li img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 2.5rem;
+}
+
+.list_und li i.fa-ellipsis {
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-left:-8rem;
+
+}
+
+
+.list_und li .time{
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-top:-1.9rem;
+    margin-left:8rem;
+}
+.list_und2{
+	gap: 0.1rem;
+}
+.list_und2 li img{
+	border-radius: 100% !important;
+	width:10rem;
+	height:10rem;
+	object-position: center;
+	object-fit: cover;
+}
+.list_und2 li p{
+	color: white;
+	font-family: monospace;
+	font-weight: bold;
+	opacity:0.7;
+}
+
+.col-6 img{
+	height:9rem;
+	width:9rem;
+	border-radius:20%;
+	margin-left:-22rem;
+	
+
+}
+.col-6 .img2{
+margin-bottom:2rem;
+
+}
+.col-6 {
+    position: relative; /* Establish a positioning context for child elements */
+}
+
+.fa-ellipsis {
+    position: absolute; /* Position relative to the parent container */
+    top: 1rem; /* Adjust vertical position */
+    right: 11rem; /* Adjust horizontal position */
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.title{
+	position:absolute;
+	top:4rem;
+	right:13rem;
+	font-family: monospace;
+	color: white;
+	opacity:0.4;
+}
+.time{
+	position:absolute;
+	top:1.5rem;
+	right:10.75rem;
+	color: white;
+	opacity:0.4;
+}
